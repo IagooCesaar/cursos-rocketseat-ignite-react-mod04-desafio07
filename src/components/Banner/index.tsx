@@ -22,6 +22,7 @@ export function Banner() {
       bgRepeat='no-repeat'
       bgSize='cover'
       justify='space-evenly'
+      mb='10'
     >
       <Stack
         direction='column'
