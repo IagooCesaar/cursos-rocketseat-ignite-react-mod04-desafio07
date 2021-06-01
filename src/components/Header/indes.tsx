@@ -18,7 +18,7 @@ export function Header() {
         justifyContent='space-between'
       >
         <BackPageButton />
-        <Image src='/logo.svg' alt='WorldTrip' objectFit='cover' h='12' />
+        <Image src='/logo.svg' alt='WorldTrip' objectFit='cover' h={['5', '12']} />
         <ToggleColorMode />
       </Flex>
     </Flex>
