@@ -3,8 +3,9 @@ import { Banner } from '../components/Banner'
 
 export default function Home() {
   return (
-    <Flex w='100%'>
+    <Flex w='100%' direction='column'>
       <Banner />
+      Continuação...
     </Flex>
   )
 }
