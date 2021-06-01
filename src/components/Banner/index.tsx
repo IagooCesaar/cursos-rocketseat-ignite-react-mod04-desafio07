@@ -1,4 +1,12 @@
-import { Box, Stack, Text, Heading, Flex, Image, useBreakpointValue } from '@chakra-ui/react'
+import {
+  Box,
+  Stack,
+  Text,
+  Heading,
+  Flex,
+  Image,
+  useBreakpointValue
+} from '@chakra-ui/react'
 
 export function Banner() {
   const isWideVersion = useBreakpointValue({
