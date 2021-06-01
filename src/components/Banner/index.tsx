@@ -52,7 +52,6 @@ export function Banner() {
           />
         </Box>
       )}
-
     </Flex>
   )
 }
