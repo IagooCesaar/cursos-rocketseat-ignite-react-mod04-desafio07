@@ -1,6 +1,10 @@
-import { Box, Stack, Text, Heading, Flex, Image } from '@chakra-ui/react'
+import { Box, Stack, Text, Heading, Flex, Image, useBreakpointValue } from '@chakra-ui/react'
 
 export function Banner() {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  })
   return (
     <Flex
       direction='row'
@@ -18,7 +22,7 @@ export function Banner() {
         spacing='5'
       >
         <Heading
-          size='lg'
+          size={!!isWideVersion ? 'lg' : 'md'}
           color='default.light.text'
         >
           5 continentes,<br />
@@ -31,14 +35,15 @@ export function Banner() {
         </Text>
       </Stack>
 
-      <Box>
-        <Image
-          src='/airplane.png'
-          alt='avião de viagem'
-          mt='76px'
-        />
-
-      </Box>
+      {isWideVersion && (
+        <Box>
+          <Image
+            src='/airplane.png'
+            alt='avião de viagem'
+            mt='76px'
+          />
+        </Box>
+      )}
 
     </Flex>
   )
