@@ -7,4 +7,8 @@ const config: ThemeConfig = {
 
 export const theme = extendTheme({
   config,
+  fonts: {
+    heading: 'Poppins',
+    body: 'Poppins',
+  }
 })
