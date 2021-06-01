@@ -1,4 +1,4 @@
-import { Box, Flex } from '@chakra-ui/react'
+import { SimpleGrid, Flex, useBreakpointValue } from '@chakra-ui/react'
 import {
   TravelTypeItem
 } from './TravelTypeItem'
@@ -12,6 +12,11 @@ const travelTypeItems = [
 ]
 
 export function TravelTypes() {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  })
+
   return (
     <Flex
       h='145px'
@@ -19,16 +24,21 @@ export function TravelTypes() {
       w='100%'
       justify='center'
     >
-      <Flex
+      <SimpleGrid
         flex='1'
         align="center"
-        justify="space-around"
+        minChildWidth='145px'
         maxW='1160px'
       >
         {travelTypeItems.map(item =>
-          <TravelTypeItem key={item.title} title={item.title} image={item.image} />
+          <TravelTypeItem 
+            key={item.title} 
+            title={item.title} 
+            image={item.image} 
+            isWideVersion={isWideVersion}
+          />
         )}
-      </Flex>
+      </SimpleGrid>
     </Flex>
   )
 }

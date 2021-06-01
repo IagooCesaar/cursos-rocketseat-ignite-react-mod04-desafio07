@@ -14,7 +14,7 @@ export const theme = extendTheme({
   },
   colors: {
     default: {
-      'highligh': '#ffba08',
+      'highlight': '#ffba08',
       'white': '#ffffff',
       'black': '#000000',
       'dark': {
