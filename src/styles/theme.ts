@@ -5,6 +5,7 @@ const config: ThemeConfig = {
   useSystemColorMode: false,  
 }
 
+
 export const theme = extendTheme({
   config,
   fonts: {
@@ -18,20 +19,27 @@ export const theme = extendTheme({
       'black': '#000000',
       'dark': {
         'text': '#47585b',
-        'info': '#999999'
+        'info': '#999999',
+        'background': "#181b23",
       },
       'light': {
         'text': '#f5f8fa',
-        'info': '#dadada'
+        'info': '#dadada',
+        'background': '#f5f8fa',
       }
     }
   },
   styles: {
-    global: {
-      body: {
-        bg: 'default.light.text',
-        color: 'default.dark.text',
-      }
+    global: (props) => {
+      const prefix = props.colorMode === 'light' 
+        ? ['light', 'dark']
+        : ['dark', 'light'];
+      return ({
+        body: {
+          bg: `default.${prefix[0]}.background`,
+          color: `default.${prefix[1]}.text`,
+        }
+      })
     }
   }
 })

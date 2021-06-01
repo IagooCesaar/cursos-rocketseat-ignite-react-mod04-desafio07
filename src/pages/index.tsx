@@ -1,6 +1,9 @@
+import { Flex } from '@chakra-ui/react';
 
 export default function Home() {
   return (
-    <h1>Hello World Trip!</h1>
+    <Flex w='100%'>
+      página inicial
+    </Flex>
   )
 }

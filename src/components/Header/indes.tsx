@@ -1,4 +1,5 @@
 import { Flex, Image } from '@chakra-ui/react';
+import { ToggleColorMode } from '../ToggleColorMode';
 
 export function Header() {
   return (
@@ -11,6 +12,7 @@ export function Header() {
       justifyContent='center'
     >
       <Image src='/logo.svg' alt='WorldTrip' objectFit='cover' h='12' />
+      <ToggleColorMode />
     </Flex>
   )
 }
