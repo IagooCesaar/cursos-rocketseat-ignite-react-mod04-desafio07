@@ -15,8 +15,18 @@ export function TravelTypeItem({
       justify='center'
       align='center'
     >
-      <Image src={image} alt={title} />
-      <Text>{title}</Text>
+      <Image 
+        src={image} 
+        alt={title} 
+        size='5.3125rem'
+      />
+      <Text
+        fontWeight='semibold'
+        size='lg'
+        mt='6'
+      >
+        {title}
+      </Text>
     </Flex>
   )
 }

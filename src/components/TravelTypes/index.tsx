@@ -13,12 +13,14 @@ const travelTypeItems = [
 
 export function TravelTypes() {
   return (
-    <Box
+    <Flex
       h='145px'
       marginX='auto'
       w='100%'
+      justify='center'
     >
       <Flex
+        flex='1'
         align="center"
         justify="space-around"
         maxW='1160px'
@@ -27,6 +29,6 @@ export function TravelTypes() {
           <TravelTypeItem key={item.title} title={item.title} image={item.image} />
         )}
       </Flex>
-    </Box>
+    </Flex>
   )
 }
