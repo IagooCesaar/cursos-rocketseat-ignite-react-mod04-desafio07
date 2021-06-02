@@ -1,10 +1,24 @@
+import { GetStaticProps } from 'next'
 import { Flex, Box, Divider } from '@chakra-ui/react';
 import { HomeBanner } from '../components/HomeBanner'
-import Carousel from '../components/Carousel';
 import { ContinentsSlide } from '../components/ContinentsSlide';
 import { TravelTypes } from '../components/TravelTypes';
 
-export default function Home() {
+import { api } from '../services/api';
+
+interface HomeProps {
+  continents: {
+    name: string;
+    title: string;
+    description: string;
+    image: string;
+  }[];
+}
+
+export default function Home({
+  continents
+}: HomeProps) {
+  console.log(continents)
   return (
     <Flex w='100%' direction='column' pb='12'>
       <HomeBanner />
@@ -18,4 +32,14 @@ export default function Home() {
       <ContinentsSlide />
     </Flex>
   )
+}
+
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+  const response = await api.get('/continents');
+  const continents = response.data;
+  return { 
+    props: {
+      continents,
+    }
+  }
 }
