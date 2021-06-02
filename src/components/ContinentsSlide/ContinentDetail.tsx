@@ -1,6 +1,8 @@
 import { Box, Text, Flex, BackgroundProps } from '@chakra-ui/react';
+import Link from 'next/link';
 
 interface ContinentDetailProps {
+  href: string;
   title: string;
   description: string;
   imageUrl: string;
@@ -9,6 +11,7 @@ interface ContinentDetailProps {
 
 export function ContinentDetail({
   title,
+  href,
   description,
   imageUrl,
   imagePosition = 'center'
@@ -23,28 +26,32 @@ export function ContinentDetail({
       h='100%'
       w='100%'
     >
-      <Flex
-        direction='column'
-        justifyContent='center'
-        align='center'
-        flex='1'
-        h='100%'
-        w='100%'
-      >
-        <Text
-          fontSize={['24', '48']}
-          fontWeight='bold'
-          textShadow='3px 3px #777'
+      <Link href={href} passHref>
+        <Flex
+          as='a'
+          direction='column'
+          justifyContent='center'
+          align='center'
+          flex='1'
+          h='100%'
+          w='100%'
         >
-          {title}
-        </Text>
-        <Text
-          fontSize={['12', '24']}
-          textShadow='3px 3px #777'
-        >
-          {description}
-        </Text>
-      </Flex>
+
+          <Text
+            fontSize={['24', '48']}
+            fontWeight='bold'
+            textShadow='3px 3px #777'
+          >
+            {title}
+          </Text>
+          <Text
+            fontSize={['12', '24']}
+            textShadow='3px 3px #777'
+          >
+            {description}
+          </Text>
+        </Flex>
+      </Link>
     </Box>
   )
 }

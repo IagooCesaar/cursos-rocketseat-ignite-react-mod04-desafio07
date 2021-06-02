@@ -13,6 +13,7 @@ export function BackPageButton() {
       spacing='8'
       fontSize={['16', '32']}
       justify='center'
+      onClick={back}
     />
   )
 }
