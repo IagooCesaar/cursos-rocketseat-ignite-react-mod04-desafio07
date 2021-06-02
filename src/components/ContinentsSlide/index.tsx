@@ -5,7 +5,7 @@ import { ContinentDetail } from './ContinentDetail'
 
 interface ContinentsSlideProps {
   continents: {
-    name: string;
+    id: string;
     title: string;
     description: string;
     image: string;
@@ -18,11 +18,12 @@ export function ContinentsSlide({
 }: ContinentsSlideProps) {
   const carouselContent = continents.map(continent => (
     <ContinentDetail
+      key={continent.id}
       title={continent.title}
       description={continent.description}
       imageUrl={continent.image}
       imagePosition={continent.betterImagePosition}
-      href={`/continents/${continent.name}`}
+      href={`/continents/${continent.id}`}
     />
   ))
 

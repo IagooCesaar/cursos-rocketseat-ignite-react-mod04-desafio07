@@ -8,7 +8,7 @@ import { api } from '../services/api';
 
 interface HomeProps {
   continents: {
-    name: string;
+    id: string;
     title: string;
     description: string;
     image: string;
