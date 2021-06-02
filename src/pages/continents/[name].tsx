@@ -1,6 +1,8 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { Flex } from '@chakra-ui/react';
 import { api } from '../../services/api';
+import React from 'react';
+import { ContinentBanner } from '../../components/ContinentBanner';
 
 interface ContinentsProps {
   continent: {
@@ -17,9 +19,14 @@ export default function Continents({
 }: ContinentsProps) {
   return (
     <Flex w='100%' direction='column' pb='12'>
+      <ContinentBanner
+        bgImage={continent.image}
+        bgPosition={continent.betterImagePosition}
+        bgSize='cover'
+        continentName={continent.title}
+      />
       <Flex maxW='1240px' px='10'>
         <h1>{continent.title}</h1>
-
       </Flex>
     </Flex>
   )
