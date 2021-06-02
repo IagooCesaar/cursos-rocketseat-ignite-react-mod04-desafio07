@@ -32,14 +32,14 @@ export function ContinentDetail({
         w='100%'
       >
         <Text
-          fontSize='48'
+          fontSize={['24', '48']}
           fontWeight='bold'
           textShadow='3px 3px #777'
         >
           {title}
         </Text>
         <Text
-          fontSize='24'
+          fontSize={['12', '24']}
           textShadow='3px 3px #777'
         >
           {description}
