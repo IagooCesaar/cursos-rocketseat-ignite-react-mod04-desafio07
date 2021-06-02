@@ -12,6 +12,7 @@ interface HomeProps {
     title: string;
     description: string;
     image: string;
+    betterImagePosition: string;
   }[];
 }
 
@@ -29,7 +30,7 @@ export default function Home({
           borderColor='body.color'
         />
       </Box>
-      <ContinentsSlide />
+      <ContinentsSlide continents={continents} />
     </Flex>
   )
 }
@@ -37,7 +38,7 @@ export default function Home({
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const response = await api.get('/continents');
   const continents = response.data;
-  return { 
+  return {
     props: {
       continents,
     }
