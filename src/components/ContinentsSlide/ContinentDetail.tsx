@@ -1,23 +1,25 @@
-import { Box, Text, Flex } from '@chakra-ui/react';
+import { Box, Text, Flex, BackgroundProps } from '@chakra-ui/react';
 
 interface ContinentDetailProps {
   title: string;
   description: string;
   imageUrl: string;
+  imagePosition?: string;
 }
 
 export function ContinentDetail({
   title,
   description,
-  imageUrl
+  imageUrl,
+  imagePosition = 'center'
 }: ContinentDetailProps) {
   return (
     <Box
       bgImage={imageUrl}
       bgRepeat='no-repeat'
       bgSize='cover'
+      bgPosition={imagePosition}
       color='default.light.text'
-      // h='450px'
       h='100%'
       w='100%'
     >
@@ -29,8 +31,19 @@ export function ContinentDetail({
         h='100%'
         w='100%'
       >
-        <Text fontSize='48' fontWeight='bold'>{title}</Text>
-        <Text fontSize='24'>{description}</Text>
+        <Text
+          fontSize='48'
+          fontWeight='bold'
+          textShadow='3px 3px #777'
+        >
+          {title}
+        </Text>
+        <Text
+          fontSize='24'
+          textShadow='3px 3px #777'
+        >
+          {description}
+        </Text>
       </Flex>
     </Box>
   )

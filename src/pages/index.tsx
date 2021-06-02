@@ -6,7 +6,7 @@ import { TravelTypes } from '../components/TravelTypes';
 
 export default function Home() {
   return (
-    <Flex w='100%' direction='column'>
+    <Flex w='100%' direction='column' pb='12'>
       <Banner />
       <TravelTypes />
       <Box flex='1' width={['60px', '90px']} marginX='auto' my="20">
@@ -16,7 +16,6 @@ export default function Home() {
         />
       </Box>
       <ContinentsSlide />
-      Continuação...
     </Flex>
   )
 }
