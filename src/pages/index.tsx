@@ -9,7 +9,7 @@ export default function Home() {
     <Flex w='100%' direction='column' pb='12'>
       <Banner />
       <TravelTypes />
-      <Box flex='1' width={['60px', '90px']} marginX='auto' my="20">
+      <Box flex='1' width={['60px', '90px']} marginX='auto' my={['10', "20"]}>
         <Divider
           border='2px'
           borderColor='body.color'
