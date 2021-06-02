@@ -1,5 +1,7 @@
 import { Flex, Box, Divider } from '@chakra-ui/react';
 import { Banner } from '../components/Banner'
+import Carousel from '../components/Carousel';
+import { ContinentsSlide } from '../components/ContinentsSlide';
 import { TravelTypes } from '../components/TravelTypes';
 
 export default function Home() {
@@ -13,6 +15,7 @@ export default function Home() {
           borderColor='body.color'
         />
       </Box>
+      <ContinentsSlide />
       Continuação...
     </Flex>
   )
