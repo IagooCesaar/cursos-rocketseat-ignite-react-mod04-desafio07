@@ -6,23 +6,23 @@ export function ContinentsSlide() {
   const carouselContent = [
     <ContinentDetail
       title='América do Norte'
-      description='O continente mais antigo.'
+      description='O Shopping Center do mundo'
       imageUrl='https://images.unsplash.com/photo-1610312278520-bcc893a3ff1d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=730&q=80'
       imagePosition='bottom'
     />,
     <ContinentDetail
       title='América do Sul'
-      description='O continente mais antigo.'
+      description='Futebol, Carnaval e mulheres bonitas'
       imageUrl='https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'
     />,
     <ContinentDetail
       title='Ásia'
-      description='O continente mais antigo.'
+      description='O maior dos continentes'
       imageUrl='https://images.unsplash.com/photo-1547150492-da7ff1742941?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'
     />,
     <ContinentDetail
       title='África'
-      description='O continente mais antigo.'
+      description='A mãe de tudo e de todos'
       imageUrl='https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80'
       imagePosition='bottom'
     />,
@@ -33,7 +33,7 @@ export function ContinentsSlide() {
     />,
     <ContinentDetail
       title='Oceania'
-      description='O continente mais antigo.'
+      description='Onde o Nemo se escondeu'
       imageUrl='https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'
     />
   ]
