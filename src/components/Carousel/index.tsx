@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { ReactNode, useRef, useState } from "react";
 import { Box } from '@chakra-ui/react';
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,7 +12,13 @@ import SwiperCore, { Navigation, Pagination } from "swiper/core";
 
 SwiperCore.use([Navigation, Pagination]);
 
-export default function Carousel() {
+interface CarouselProps {
+  content: ReactNode[];
+}
+
+export default function Carousel({
+  content,
+}: CarouselProps) {
   return (
     <Box
       w='100%'
@@ -57,15 +63,9 @@ export default function Carousel() {
         // }
       }}>
       <Swiper navigation={true} pagination={true} className="mySwiper">
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {content?.map(item =>
+          <SwiperSlide>{item}</SwiperSlide>
+        )}
       </Swiper>
     </Box >
   );
