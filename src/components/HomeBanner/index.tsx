@@ -7,14 +7,20 @@ import {
   Image,
   useBreakpointValue
 } from '@chakra-ui/react'
+import { BannerContainer } from '../BannerContainer'
 
-export function Banner() {
+export function HomeBanner() {
   const isWideVersion = useBreakpointValue({
     base: false,
     lg: true,
   })
   return (
-    <Flex
+    <BannerContainer
+      bgImage='/banner-background.png'
+      bgSize='cover'
+      heigh='335px'
+    >
+    {/* <Flex
       direction='row'
       width='100%'
       height='335px'
@@ -23,7 +29,7 @@ export function Banner() {
       bgSize='cover'
       justify='space-evenly'
       mb={['14', '28']}
-    >
+    > */}
       <Stack
         direction='column'
         p='8'
@@ -53,6 +59,7 @@ export function Banner() {
           />
         </Box>
       )}
-    </Flex>
+    {/* </Flex> */}
+    </BannerContainer>
   )
 }
