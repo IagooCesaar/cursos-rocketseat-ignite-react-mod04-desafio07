@@ -3,7 +3,12 @@ import { useRouter } from "next/dist/client/router";
 import { RiArrowLeftSLine } from 'react-icons/ri'
 
 export function BackPageButton() {
-  const { back } = useRouter();
+  const { back, asPath } = useRouter();
+  if (asPath === '/') {
+    return (
+      <div />
+    )
+  }
   return (
     <IconButton
       aria-label="Voltar para página anterior"
