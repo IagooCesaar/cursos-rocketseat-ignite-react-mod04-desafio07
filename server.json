@@ -1,0 +1,35 @@
+{
+  "continents": [
+    {
+      "name": "north-america",
+      "title": "América do Norte",
+      "description": "O Shopping Center do mundo",
+      "image": "https://images.unsplash.com/photo-1610312278520-bcc893a3ff1d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=730&q=80"
+    },{
+      "name": "south-america",
+      "title": "América do Sul",
+      "description": "Futebol, Carnaval e mulheres bonitas",
+      "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+    }, {
+      "name": "asia",
+      "title": "Ásia",
+      "description": "O maior dos continentes",
+      "image": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80"
+    }, {
+      "name": "africa",
+      "title": "África",
+      "description":"A mãe de tudo e de todos",
+      "image":"https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80"
+    }, {
+      "name": "europe",
+      "title": "Europa",
+      "description":"O continente mais antigo",
+      "image":"https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=752&q=80"
+    }, {
+      "name": "oceania",
+      "title": "Oceania",
+      "description":"Onde o nemo se escondeu",
+      "image":"https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+    }
+  ]
+}
