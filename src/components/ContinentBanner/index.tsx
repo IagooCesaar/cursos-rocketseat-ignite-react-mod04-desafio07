@@ -37,11 +37,13 @@ export function ContinentBanner({
         width='100%'
         height='100%'
         flex='1'
-        justify='flex-end'
+        align='flex-end'
+        p='12'
       >
         <Heading
-          size={!!isWideVersion ? 'lg' : 'md'}
+          fontSize={isWideVersion ? '56' : '28'}
           color='default.light.text'
+          ml='40'
         >
           {continentName}
         </Heading>
