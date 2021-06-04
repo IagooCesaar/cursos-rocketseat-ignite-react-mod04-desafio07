@@ -9,6 +9,7 @@ import {
 
 import { ContinentBanner } from '../../components/ContinentBanner';
 import { api } from '../../services/api';
+import { ContinentInfo } from '../../components/ContinentInfo';
 
 interface ContinentsProps {
   continent: {
@@ -17,6 +18,7 @@ interface ContinentsProps {
     description: string;
     image: string;
     betterImagePosition: string;
+    bio?: string;
   }
 }
 
@@ -44,45 +46,10 @@ export default function Continents({
         >
           <Box flex='1'>
             <Text as='p' fontSize={['md', 'lg']} align='justify'>
-              A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo
-              a península ocidental da Eurásia. A Europa geralmente divide-se da Ásia a leste pela
-              divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o
-              mar Negro a sudes
+              {continent.bio ?? 'Not implemented'}
             </Text>
           </Box>
-          <Flex
-            flex='1'
-            direction='row'
-            justify="space-around"
-            align="center"
-          >
-            <Flex
-              direction='column'
-              fontSize={['1xl', '2xl']}
-              align='center'
-            >
-              <Text fontSize={['20', '38']} fontWeight='semibold' color='default.highlight'>50</Text>
-              <Text fontWeight='semibold'>países</Text>
-            </Flex>
-            <Flex
-              direction='column'
-              fontSize={['1xl', '2xl']}
-              justify="center"
-              align='center'
-            >
-              <Text fontSize={['20', '38']} fontWeight='semibold' color='default.highlight'>60</Text>
-              <Text fontWeight='semibold'>línguas</Text>
-            </Flex>
-            <Flex
-              direction='column'
-              fontSize={['1xl', '2xl']}
-              justify="center"
-              align='center'
-            >
-              <Text fontSize={['20', '38']} fontWeight='semibold' color='default.highlight'>27</Text>
-              <Text fontWeight='semibold'>cidades</Text>
-            </Flex>
-          </Flex>
+          <ContinentInfo countries={50} languages={60} cities={127} />
         </Flex>
       </Box>
     </Flex >
