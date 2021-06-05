@@ -36,7 +36,6 @@ export function ContinentDetail({
           h='100%'
           w='100%'
         >
-
           <Text
             fontSize={['24', '48']}
             fontWeight='bold'
