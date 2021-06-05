@@ -24,7 +24,7 @@ export function CitiesGrid({
       width='100%'
       {...rest}
     >
-      <Heading>Cidades {cities.length > 100 ? '100+' : cities.length}</Heading>
+      <Heading fontSize={['24', '48']}>Cidades {cities.length > 100 ? '100+' : cities.length}</Heading>
       <SimpleGrid minChildWidth='256px' gap='45px' mt='12'>
         {cities.map(city =>
           <CitiesCard key={city.id} city={city} />
