@@ -31,19 +31,20 @@ export function ContinentBanner({
       bgImage={bgImage}
       bgSize={bgSize}
       bgPosition={bgPosition}
-      heigh='500px'
+      heigh={isWideVersion ? '500px' : '150px'}
     >
       <Flex
         width='100%'
         height='100%'
         flex='1'
-        align='flex-end'
-        p='12'
+        align={isWideVersion ? 'flex-end' : 'center'}
+        justify={isWideVersion ? '' : 'center'}
+        p={isWideVersion ? '12' : '0'}
       >
         <Heading
           fontSize={isWideVersion ? '56' : '28'}
           color='default.light.text'
-          ml='40'
+          ml={isWideVersion ? '40' : '0'}
         >
           {continentName}
         </Heading>
