@@ -56,9 +56,9 @@
       "description":"Onde o nemo se escondeu",
       "image":"https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
       "betterImagePosition": "center",
-      "bio": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia. A Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
-      "countries": 50,
-      "languages": 60,
+      "bio": "Oceania é uma região geográfica composta por vários grupos de ilhas do oceano Pacífico. O termo Oceania foi criado em 1831 pelo explorador francês Dumont d'Urville. O termo é usado hoje em vários idiomas para designar uma região geográfica e política que compreende o continente da Austrália e ilhas do Oceano Pacífico adjacentes. Os limites da Oceania são definidos de várias maneiras. A maioria das definições reconhecem partes da Australásia como a Austrália, Nova Zelândia e Nova Guiné, e parte do Arquipélago Malaio como sendo partes da Oceania.",
+      "countries": 16,
+      "languages": 18,
       "cities": 127
     }
   ],
@@ -482,6 +482,90 @@
       "country": "Cabo Verde",
       "flag": "cabo-verde",
       "continent": "africa"
+    },
+    {
+      "id":"sydney",
+      "name": "Sydney",
+      "country": "Austrália",
+      "flag": "australia",
+      "continent": "oceania"
+    },
+    {
+      "id":"perth",
+      "name": "Perth",
+      "country": "Austrália",
+      "flag": "australia",
+      "continent": "oceania"
+    },
+    {
+      "id":"melbourne",
+      "name": "Melbourne",
+      "country": "Austrália",
+      "flag": "australia",
+      "continent": "oceania"
+    },
+    {
+      "id":"brisbane",
+      "name": "Brisbane",
+      "country": "Austrália",
+      "flag": "australia",
+      "continent": "oceania"
+    },
+    {
+      "id":"komodo",
+      "name": "Komodo",
+      "country": "Indonésia",
+      "flag": "indonesia",
+      "continent": "oceania"
+    },
+    {
+      "id":"wakatobi",
+      "name": "Wakatobi",
+      "country": "Indonésia",
+      "flag": "indonesia",
+      "continent": "oceania"
+    },
+    {
+      "id":"lombok",
+      "name": "Lombok",
+      "country": "Indonésia",
+      "flag": "indonesia",
+      "continent": "oceania"
+    },
+    {
+      "id":"borobudur",
+      "name": "Borobudur",
+      "country": "Indonésia",
+      "flag": "indonesia",
+      "continent": "oceania"
+    },
+    {
+      "id":"auckland",
+      "name": "Auckland",
+      "country": "Nova Zelândia",
+      "flag": "nova-zelandia",
+      "continent": "oceania"
+    },
+    {
+      "id":"christchurch",
+      "name": "Christchurch",
+      "country": "Nova Zelândia",
+      "flag": "nova-zelandia",
+      "continent": "oceania"
+    },
+    {
+      "id":"gisborne",
+      "name": "Gisborne",
+      "country": "Nova Zelândia",
+      "flag": "nova-zelandia",
+      "continent": "oceania"
+    },
+    {
+      "id":"hamilton",
+      "name": "Hamilton",
+      "country": "Nova Zelândia",
+      "flag": "nova-zelandia",
+      "continent": "oceania"
     }
   ]
 }
