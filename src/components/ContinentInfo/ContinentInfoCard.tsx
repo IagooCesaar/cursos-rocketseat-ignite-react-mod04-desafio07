@@ -1,5 +1,6 @@
-import { Flex, Icon, Text, Tooltip } from '@chakra-ui/react';
-import { RiInformationLine } from 'react-icons/ri'
+import { Flex, Text } from '@chakra-ui/react';
+import React from 'react';
+import { ContinentAdditionalInfo } from './ContinentAdditionalInfo';
 
 interface ContinentInfoCardProps {
   value: number;
@@ -36,16 +37,13 @@ export function ContinentInfoCard({
         {value > 100 ? value - 100 : value}
       </Text>
       <Text fontWeight='semibold'>
-        {kindComplete}
         {(value > 100)
-          && (
+          ? (
             <>
-              {' '}
-              <Tooltip hasArrow label={`${value} ${kindComplete}`} fontSize='md' >
-                <span><Icon opacity='50%' as={RiInformationLine} /></span>
-              </Tooltip>
+              {kindComplete} +100{' '}
+              <ContinentAdditionalInfo informationBody={`${value} ${kindComplete}`} />
             </>
-          )
+          ) : <>{kindComplete}</>
         }
       </Text>
     </Flex>
