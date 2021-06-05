@@ -15,9 +15,11 @@ export function ContinentInfo({
   return (
     <Flex
       flex='1'
+      width='100%'
       direction='row'
       justify="space-around"
       align="center"
+      as='div'
     >
       <ContinentInfoCard value={50} kind='countries' />
       <ContinentInfoCard value={60} kind='languages' />

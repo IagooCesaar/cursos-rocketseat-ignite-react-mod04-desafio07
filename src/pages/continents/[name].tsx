@@ -42,15 +42,17 @@ export default function Continents({
           justify='space-between'
           align='center'
           width='100%'
+          minH={isWideVersion ? 'auto' : '300px'}
           direction={isWideVersion ? 'row' : 'column'}
         >
-          <Box flex='1'>
-            <Text as='p' fontSize={['md', 'lg']} align='justify'>
+          <Box flex='1' width='100%'>
+            <Text as='p' fontSize={['md', 'lg']} align='justify' width='100%'>
               {continent.bio ?? 'Not implemented'}
             </Text>
           </Box>
           <ContinentInfo countries={50} languages={60} cities={127} />
         </Flex>
+        {/* lista de cidades */}
       </Box>
     </Flex >
   )
