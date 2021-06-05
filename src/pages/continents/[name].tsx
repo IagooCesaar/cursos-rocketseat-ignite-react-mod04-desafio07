@@ -68,7 +68,7 @@ export default function Continents({
           </Box>
           <ContinentInfo countries={50} languages={60} cities={127} />
         </Flex>
-        <CitiesGrid cities={cities} />
+        <CitiesGrid cities={cities} mt='16' />
       </Box>
     </Flex >
   )

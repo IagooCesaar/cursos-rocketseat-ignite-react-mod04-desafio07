@@ -15,12 +15,14 @@ interface CitiesGridProps extends FlexProps {
 }
 
 export function CitiesGrid({
-  cities
+  cities,
+  ...rest
 }: CitiesGridProps) {
   return (
     <Flex
       direction='column'
       width='100%'
+      {...rest}
     >
       <Heading>Cidades {cities.length > 100 ? '100+' : cities.length}</Heading>
       <SimpleGrid minChildWidth='256px' gap='45px'>
