@@ -21,6 +21,9 @@ interface Continent {
   image: string;
   betterImagePosition: string;
   bio?: string;
+  countries: number;
+  cities: number;
+  languages: number;
 }
 
 interface City {
@@ -66,7 +69,11 @@ export default function Continents({
               {continent.bio ?? 'Not implemented'}
             </Text>
           </Box>
-          <ContinentInfo countries={50} languages={60} cities={127} />
+          <ContinentInfo
+            countries={continent.countries ?? 0}
+            languages={continent.languages ?? 0}
+            cities={continent.cities ?? 0}
+          />
         </Flex>
         <CitiesGrid cities={cities} mt='16' />
       </Box>

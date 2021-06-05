@@ -21,9 +21,9 @@ export function ContinentInfo({
       align="center"
       as='div'
     >
-      <ContinentInfoCard value={50} kind='countries' />
-      <ContinentInfoCard value={60} kind='languages' />
-      <ContinentInfoCard value={127} kind='cities' />
+      <ContinentInfoCard value={countries} kind='countries' />
+      <ContinentInfoCard value={languages} kind='languages' />
+      <ContinentInfoCard value={cities} kind='cities' />
     </Flex>
   )
 }
