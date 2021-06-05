@@ -12,19 +12,34 @@ import { api } from '../../services/api';
 import { ContinentInfo } from '../../components/ContinentInfo';
 import { CitiesGrid } from '../../components/CitiesGrid';
 
+import { api } from '../../services/api';
+import { unsplashApi } from '../../services/unsplashApi';
+
+interface Continent {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  betterImagePosition: string;
+  bio?: string;
+}
+
+interface City {
+  id: string;
+  name: string;
+  country: string;
+  continent: string;
+  image?: string;
+}
+
 interface ContinentsProps {
-  continent: {
-    id: string;
-    title: string;
-    description: string;
-    image: string;
-    betterImagePosition: string;
-    bio?: string;
-  }
+  continent: Continent;
+  cities: City[];
 }
 
 export default function Continents({
   continent,
+  cities,
 }: ContinentsProps) {
   const isWideVersion = useBreakpointValue({
     base: false,
