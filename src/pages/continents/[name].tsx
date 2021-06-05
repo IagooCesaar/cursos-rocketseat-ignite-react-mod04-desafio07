@@ -10,6 +10,7 @@ import {
 import { ContinentBanner } from '../../components/ContinentBanner';
 import { api } from '../../services/api';
 import { ContinentInfo } from '../../components/ContinentInfo';
+import { CitiesGrid } from '../../components/CitiesGrid';
 
 interface ContinentsProps {
   continent: {
@@ -52,7 +53,7 @@ export default function Continents({
           </Box>
           <ContinentInfo countries={50} languages={60} cities={127} />
         </Flex>
-        {/* lista de cidades */}
+        <CitiesGrid />
       </Box>
     </Flex >
   )
