@@ -44,14 +44,36 @@
       "id": "london",
       "name": "Londres",
       "country": "Reino Unido",
+      "flag": "reino-unido",
       "continent": "europe"
     },
     {
       "id":"paris",
       "name": "Paris",
       "country": "França",
+      "flag": "franca",
+      "continent": "europe"
+    },
+    {
+      "id":"rome",
+      "name": "Roma",
+      "country": "Itália",
+      "flag": "italia",
+      "continent": "europe"
+    },
+    {
+      "id":"prague",
+      "name": "Praga",
+      "country": "República Tcheca",
+      "flag": "rep-tcheca",
+      "continent": "europe"
+    },
+    {
+      "id":"amsterdam",
+      "name": "Amsterdã",
+      "country": "Holanda",
+      "flag": "paises-baixos",
       "continent": "europe"
     }
-
   ]
 }

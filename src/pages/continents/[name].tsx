@@ -27,6 +27,7 @@ interface City {
   id: string;
   name: string;
   country: string;
+  flag?: string;
   continent: string;
   image?: string;
 }
@@ -89,7 +90,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const citiesData = citiesResponse.data;
   const cities: City[] = await Promise.all(citiesData.map(async (city: City) => {
     const unsplashResponse = await unsplashApi
-      .get(`/search/photos?page=1&per_page=1&query=${city.id}`);
+      .get(encodeURI(`/search/photos?page=1&per_page=1&query=${city.id}`));
     return {
       ...city,
       image: unsplashResponse.data.results[0].urls.raw,

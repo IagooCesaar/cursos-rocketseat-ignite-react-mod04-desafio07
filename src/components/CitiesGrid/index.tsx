@@ -5,6 +5,7 @@ interface City {
   id: string;
   name: string;
   country: string;
+  flag?: string;
   continent: string;
   image?: string;
 }
