@@ -36,9 +36,9 @@
       "description":"A mãe de tudo e de todos",
       "image":"https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80",
       "betterImagePosition": "bottom",
-      "bio": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia. A Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
-      "countries": 50,
-      "languages": 60,
+      "bio": "A África é o terceiro continente mais extenso (depois da Ásia e da América) com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas (estimativa para 2005), representando cerca de um sétimo da população mundial, e 54 países independentes. Tem se transformado na ultima década em uma continente cada vez mais católico.",
+      "countries": 54,
+      "languages": 3000,
       "cities": 127
     }, {
       "id": "europe",
@@ -426,6 +426,62 @@
       "country": "Egito",
       "flag": "egito",
       "continent": "asia"
+    },
+    {
+      "id":"cable-city",
+      "name": "Cidade do Cabo",
+      "country": "África do Sul",
+      "flag": "africa-do-sul",
+      "continent": "africa"
+    },
+    {
+      "id":"pretoria",
+      "name": "Pretória",
+      "country": "África do Sul",
+      "flag": "africa-do-sul",
+      "continent": "africa"
+    },
+    {
+      "id":"durban",
+      "name": "Durban",
+      "country": "África do Sul",
+      "flag": "africa-do-sul",
+      "continent": "africa"
+    },
+    {
+      "id":"johannesburg",
+      "name": "Joanesburgo",
+      "country": "África do Sul",
+      "flag": "africa-do-sul",
+      "continent": "africa"
+    },
+    {
+      "id":"bloemfontein",
+      "name": "Bloemfontein",
+      "country": "África do Sul",
+      "flag": "africa-do-sul",
+      "continent": "africa"
+    },
+    {
+      "id":"santa-maria",
+      "name": "Santa Maria",
+      "country": "Cabo Verde",
+      "flag": "cabo-verde",
+      "continent": "africa"
+    },
+    {
+      "id":"santiago",
+      "name": "Santiago",
+      "country": "Cabo Verde",
+      "flag": "cabo-verde",
+      "continent": "africa"
+    },
+    {
+      "id":"good-view",
+      "name": "Boa Vista",
+      "country": "Cabo Verde",
+      "flag": "cabo-verde",
+      "continent": "africa"
     }
   ]
 }
