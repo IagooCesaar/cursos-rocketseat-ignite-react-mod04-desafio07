@@ -38,5 +38,20 @@
       "image":"https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
       "betterImagePosition": "center"
     }
+  ],
+  "cities": [
+    {
+      "id": "london",
+      "name": "Londres",
+      "country": "Reino Unido",
+      "continent": "europe"
+    },
+    {
+      "id":"paris",
+      "name": "Paris",
+      "country": "França",
+      "continent": "europe"
+    }
+
   ]
 }
