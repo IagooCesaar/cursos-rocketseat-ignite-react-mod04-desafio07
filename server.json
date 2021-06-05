@@ -16,9 +16,9 @@
       "description": "Futebol, Carnaval e mulheres bonitas",
       "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
       "betterImagePosition": "center",
-      "bio": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia. A Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
-      "countries": 50,
-      "languages": 60,
+      "bio": "A América do Sul é um continente que compreende a porção meridional da América. Também é considerada um subcontinente do continente americano. A sua extensão é de 17 819 100 km², abrangendo 12% da superfície terrestre e 6% da população mundial. Une-se à América Central a norte pelo istmo do Panamá e se separa da Antártida ao sul pelo estreito de Drake. Tem uma extensão de 7 500 km desde o mar do Caribe até ao cabo Horn, ponto extremo sul do continente. Os outros pontos extremos da América do Sul são: ao norte a Punta Gallinas, na Colômbia, ao leste a Ponta do Seixas, no Brasil, e a oeste a Punta Pariñas, no Peru. Seus limites naturais são: ao norte com o mar do Caribe; a leste, nordeste e sudeste com o oceano Atlântico; e a oeste com o oceano Pacífico. O Brasil representa atualmente a metade da população e produto econômico desta região.",
+      "countries": 12,
+      "languages": 9,
       "cities": 127
     }, {
       "id": "asia",
@@ -167,7 +167,111 @@
       "country": "Canadá",
       "flag": "canada",
       "continent": "north-america"
+    },
+    {
+      "id":"maranhao",
+      "name": "Maranhão",
+      "country": "Brasil",
+      "flag": "brasil",
+      "continent": "south-america"
+    },
+    {
+      "id":"rio-de-janeiro",
+      "name": "Rio de Janeiro",
+      "country": "Brasil",
+      "flag": "brasil",
+      "continent": "south-america"
+    },
+    {
+      "id":"morro-de-são-paulo",
+      "name": "Morro de São Paulo",
+      "country": "Brasil",
+      "flag": "brasil",
+      "continent": "south-america"
+    },
+    {
+      "id":"gramado",
+      "name": "Gramado",
+      "country": "Brasil",
+      "flag": "brasil",
+      "continent": "south-america"
+    },
+    {
+      "id":"bogota",
+      "name": "Bogotá",
+      "country": "Colômbia",
+      "flag": "colombia",
+      "continent": "south-america"
+    },
+    {
+      "id":"cartagena-das-indias",
+      "name": "Cartagena das Índias",
+      "country": "Colômbia",
+      "flag": "colombia",
+      "continent": "south-america"
+    },
+    {
+      "id":"guatape",
+      "name": "Guatapé",
+      "country": "Colômbia",
+      "flag": "colombia",
+      "continent": "south-america"
+    },
+    {
+      "id":"medellin",
+      "name": "Medellín",
+      "country": "Colômbia",
+      "flag": "colombia",
+      "continent": "south-america"
+    },
+    {
+      "id":"los-roques",
+      "name": "Los Roques",
+      "country": "Venezuela",
+      "flag": "venezuela",
+      "continent": "south-america"
+    },
+    {
+      "id":"caracas",
+      "name": "Caracas",
+      "country": "Venezuela",
+      "flag": "venezuela",
+      "continent": "south-america"
+    },
+    {
+      "id":"meridas",
+      "name": "Méridas",
+      "country": "Venezuela",
+      "flag": "venezuela",
+      "continent": "south-america"
+    },
+    {
+      "id":"buenos-aires",
+      "name": "Buenos Aires",
+      "country": "Argentina",
+      "flag": "argentina",
+      "continent": "south-america"
+    },
+    {
+      "id":"puerto-iguazu",
+      "name": "Puerto Iguazu",
+      "country": "Argentina",
+      "flag": "argentina",
+      "continent": "south-america"
+    },
+    {
+      "id":"el-calafate",
+      "name": "El Calafate",
+      "country": "Argentina",
+      "flag": "argentina",
+      "continent": "south-america"
+    },
+    {
+      "id":"ushuaia",
+      "name": "Ushuaia",
+      "country": "Argentina",
+      "flag": "argentina",
+      "continent": "south-america"
     }
-    
   ]
 }
