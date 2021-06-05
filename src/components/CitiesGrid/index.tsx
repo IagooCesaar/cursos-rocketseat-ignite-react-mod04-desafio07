@@ -1,5 +1,13 @@
+import { Flex, Heading, SimpleGrid } from '@chakra-ui/react'
+import { CitiesCard } from './CitiesCard'
+
 export function CitiesGrid() {
   return (
-    <span>Cities grid</span>
+    <Flex>
+      <Heading>Cidades +100</Heading>
+      <SimpleGrid>
+        <CitiesCard />
+      </SimpleGrid>
+    </Flex>
   )
 }
