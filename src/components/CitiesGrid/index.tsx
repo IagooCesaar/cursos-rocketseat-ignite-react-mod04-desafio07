@@ -1,4 +1,4 @@
-import { Flex, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Flex, Heading, SimpleGrid, FlexProps } from '@chakra-ui/react'
 import { CitiesCard } from './CitiesCard'
 
 interface City {
@@ -10,7 +10,7 @@ interface City {
   image?: string;
 }
 
-interface CitiesGridProps {
+interface CitiesGridProps extends FlexProps {
   cities: City[];
 }
 
@@ -18,9 +18,12 @@ export function CitiesGrid({
   cities
 }: CitiesGridProps) {
   return (
-    <Flex>
-      <Heading>Cidades +100</Heading>
-      <SimpleGrid>
+    <Flex
+      direction='column'
+      width='100%'
+    >
+      <Heading>Cidades {cities.length > 100 ? '100+' : cities.length}</Heading>
+      <SimpleGrid minChildWidth='256px' gap='45px'>
         {cities.map(city =>
           <CitiesCard key={city.id} city={city} />
         )}
