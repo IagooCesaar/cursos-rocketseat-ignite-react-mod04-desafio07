@@ -8,7 +8,6 @@ import {
 } from '@chakra-ui/react';
 
 import { ContinentBanner } from '../../components/ContinentBanner';
-import { api } from '../../services/api';
 import { ContinentInfo } from '../../components/ContinentInfo';
 import { CitiesGrid } from '../../components/CitiesGrid';
 
@@ -68,7 +67,7 @@ export default function Continents({
           </Box>
           <ContinentInfo countries={50} languages={60} cities={127} />
         </Flex>
-        <CitiesGrid />
+        <CitiesGrid cities={cities} />
       </Box>
     </Flex >
   )
@@ -83,11 +82,24 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { name } = params;
-  const response = await api.get(`/continents/${String(name)}`)
-  const continent = response.data;
+  const continentsResponse = await api.get(`/continents/${String(name)}`)
+  const continent = continentsResponse.data;
+
+  const citiesResponse = await api.get(`/cities?continent=${String(name)}`)
+  const citiesData = citiesResponse.data;
+  const cities: City[] = await Promise.all(citiesData.map(async (city: City) => {
+    const unsplashResponse = await unsplashApi
+      .get(`/search/photos?page=1&per_page=1&query=${city.id}`);
+    return {
+      ...city,
+      image: unsplashResponse.data.results[0].urls.raw,
+    }
+  }))
+
   return {
     props: {
-      continent
+      continent,
+      cities
     }
   }
 }

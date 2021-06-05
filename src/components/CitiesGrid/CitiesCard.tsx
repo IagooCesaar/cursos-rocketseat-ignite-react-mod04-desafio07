@@ -16,7 +16,7 @@ export function CitiesCard({
 }: CitiesCardProps) {
   return (
     <Box>
-      <Image src={city.image} />
+      <Image width="100px" height="100px" src={city.image} />
       <span>{city.name}</span>
     </Box>
   )
